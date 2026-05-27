@@ -159,7 +159,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
         </form>
 
-        <a href="ai.php" class="back-link">⬅ Back to Tools List</a>
+        <a href="index.php" class="back-link">⬅ Back to Tools List</a>
         <script src = "ToolReview.js"></script>
     </div>
 
