@@ -1,0 +1,210 @@
+/* --- Root Variables for consistent theming --- */
+:root {
+    --primary:       #6366f1;   
+    --primary-hover: #4f46e5;   
+    --bg:            #070b1a;   
+    --card-bg:       #1e293b;   
+    --filter-bg:     #111827;   
+    --border:        #2d3748;   
+    --text-main:     #e2e8f0;   
+    --text-muted:    #94a3b8;   
+    --badge-bg:      #312e81;   
+    --badge-text:    #a5b4fc;   
+}
+
+
+/* --- Body styling & font settings --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    color: var(--text-main);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+/* --- Container and logo presentation --- */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.site-logo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;      
+    border-radius: 50%;     
+    margin-bottom: 15px;
+    border: 3px solid var(--primary);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- Header section layout --- */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+
+/* --- Filter controls styling --- */
+.filter-container {
+    background: var(--filter-bg);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    border: 1px solid var(--border);
+}
+
+.filter-container h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: var(--text-main);
+}
+
+.filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.filter-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: var(--text-main);
+    user-select: none;
+}
+
+.filter-label input {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    accent-color: var(--primary);
+}
+
+
+/* --- Main content grid layout --- */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+/* --- Individual card component styling --- */
+.card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.card.hidden {
+    display: none !important;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+    max-height: 80px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    align-self: center;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 1.4rem;
+    color: var(--text-main);
+}
+
+.card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    flex-grow: 1; 
+}
+
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+/* --- Badge components for feature tags --- */
+.feature-badge {
+    background-color: var(--badge-bg);
+    color: var(--badge-text);
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+
+/* --- Action buttons and footer links --- */
+.btn {
+    display: inline-block;
+    background-color: var(--primary);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: var(--primary-hover);
+}
+
+
+
+#no-results {
+    text-align: center;
+    grid-column: 1 / -1;
+    color: var(--text-muted);
+    font-style: italic;
+    display: none;
+    padding: 40px 0;
+}
+
+
+
+.footer-link {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}

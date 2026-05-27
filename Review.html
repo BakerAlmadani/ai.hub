@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rate AI Hub</title>
+<link rel="stylesheet" type="text/css" href="Reviews.css"> 
+</head>
+<body>
+<header>
+    
+    <h1>⭐ Rate AI Hub</h1>
+    <p><i>We value your feedback</i></p>
+    <nav>
+        <a href="ai.php">Home</a> |
+        <a href="ai.php">AI Tools</a> |
+        <a href="Review.html">Rate Us</a>
+    </nav>
+    <hr>
+</header>
+<main>
+    <section>
+        <h2>Feedback & Support</h2>
+        <form id="WebReview">
+            
+            <label for="email">Your Email (Required):</label><br>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            <br><br>
+
+            <label for="rating">Select Rating:</label><br>
+            <select id="rating" name="rating">
+                <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+                <option value="4">⭐⭐⭐⭐ Good</option>
+                <option value="3">⭐⭐⭐ Average</option>
+                <option value="2">⭐⭐ Poor</option>
+                <option value="1">⭐ Very Bad</option>
+            </select>
+            <br><br>
+
+            <label for="comment">Your Comment:</label><br>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your feedback here..."></textarea>
+            <br><br>
+
+            <label for="issues">Report an Issue (Optional):</label><br>
+            <textarea id="issues" name="issues" rows="3" placeholder="Describe any problems you faced..."></textarea>
+            <br><br>
+
+            <div style="display: flex; gap: 10px;">
+                <button type="submit" name="action" value="submit">Submit Review</button>
+                <button type="submit" name="action" value="update" style="background-color: #21f705;">Update Review</button>
+                <button type="submit" name="action" value="delete" style="background-color: #f44336;">Delete</button>
+            </div>
+
+            <div id="responseMessage" style="margin-top: 15px;"></div>
+        </form>
+    </section>
+    <hr>
+    
+    <section>
+        <h2>Thank You!</h2>
+        <p>Your feedback helps us improve and provide better AI tools for everyone.</p>
+        <a href="index.html">Back to Home</a>
+    </section>
+    
+    <section>
+        <h2>Why Use Our Platform?</h2>
+        <ul>
+            <li>✔ Easy access to AI tools</li>
+            <li>✔ Organized categories</li>
+            <li>✔ User ratings and reviews</li>
+            <li>✔ Simple and clean interface</li>
+        </ul>
+    </section>
+</main>
+<footer>
+    <hr>
+    <p>© 2026 AI Hub</p>
+    <p>Contact us: info@aihub.com</p>
+</footer>
+
+<script src = "Review.js"></script>
+</body>
+</html>

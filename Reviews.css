@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #070b1a;
+    color: #64748b;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    animation: fadeInPage 0.6s ease-out;
+}
+
+@keyframes fadeInPage {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+p { text-align: center; }
+
+h1 { color: #ffffff; font-size: 2.2rem; text-align: center; margin-bottom: 20px; }
+
+/* Subheading styling */
+h2 { color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; margin: 20px 0 15px; font-size: 1.5rem; }
+
+/* Link styling */
+a { color: #0284c7; text-decoration: none; transition: 0.2s; }
+
+/* Link hover effect */
+a:hover { text-decoration: underline; }
+
+/* Navigation bar container */
+nav {
+    background-color: #0284c7;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Navigation links */
+nav a {
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+/* Navigation links hover effect */
+nav a:hover { background-color: #0369a1; }
+
+/* Section and main container styling */
+section, main {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Unordered list reset */
+ul { list-style-type: none; }
+
+/* List item styling */
+ul li {
+    background: #f1f5f9;
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border-left: 4px solid #0284c7;
+}
+
+/* Form input, textarea, and select fields */
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #0284c7;
+    color: white;
+    font-weight: 600;
+}
+
+/* Footer styling */
+footer { text-align: center; padding: 20px 0; font-size: 0.85rem; color: #64748b; }
